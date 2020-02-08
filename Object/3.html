@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <ul>
+        <script>
+            var grades = 
+            {
+                'list' : {'DDang' : 10, 'Non' : 70, 'bloger' : 90},
+                'show' : function()
+                {
+                    alert('Hello world');
+                },
+                'thisis' : function()
+                {
+                    for(var name in this.list)
+                    {
+                        document.write(name,this.list[name]);
+                    }
+
+                }
+            }
+
+           // alert(grades['list']['DDang'])
+           // grades['show']();
+            grades['thisis']();
+            grades.thisis();
+          </script>
+        </ul>
+    </body>
+</html>
